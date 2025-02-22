@@ -13,14 +13,23 @@ An array is a data structure that contains a collection of elements, typically o
 
 1. **Traversal**: Accessing each element of the array.
    - **Time Complexity**: O(n)
-2. **Insertion**: Adding an element at a specific position.
+   ## Diagram
+   ![Reading](https://github.com/byramnarayan/CompletePlacementResource/blob/main/src/dsaImg/readingStaticArray.png)
+
+2. **Insertion**: Adding an element at a end position.
    - **Time Complexity**: O(n) (worst case, when inserting at the beginning)
-3. **Deletion**: Removing an element from a specific position.
+4. **Deletion**: Removing an element from a end position.
    - **Time Complexity**: O(n) (worst case, when deleting from the beginning)
-4. **Searching**: Finding the location of an element in the array.
-   - **Time Complexity**: O(n) (linear search), O(log n) (binary search on sorted array)
-5. **Sorting**: Arranging the elements in a particular order (ascending or descending).
-   - **Time Complexity**: O(n log n) (average case for efficient algorithms like quicksort, mergesort)
+   ## Diagram
+   ![atEnd](https://github.com/byramnarayan/CompletePlacementResource/blob/main/src/dsaImg/insertRemoveAtEnd.png)
+
+3. **Insertion**: Adding an element at a specific position.
+   - **Time Complexity**: O(n) (worst case, when inserting at the beginning)
+4. **Deletion**: Removing an element from a specific position.
+   - **Time Complexity**: O(n) (worst case, when deleting from the beginning)
+   ## Diagram
+   ![atMiddle](https://github.com/byramnarayan/CompletePlacementResource/blob/main/src/dsaImg/insertRemoveMiddleStart.png)
+
 
 
 ## Advantages of Arrays
