@@ -1,7 +1,6 @@
 # Data Structures and Algorithms Structure
 
 ## 02 ARRAYS
-- **RAM** 
 - **Static Arrays**  
   - LEETCODE CHALLENGES.txt
   - PYTHON CODE.txt
