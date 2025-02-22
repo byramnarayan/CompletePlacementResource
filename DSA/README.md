@@ -1,4 +1,4 @@
-# Data Structures and Algorithms Course Structure
+# Data Structures and Algorithms Structure
 
 ## 02 ARRAYS
 - **RAM** 
