@@ -6,5 +6,5 @@ Repository Full of Complete Placement Resource
 There this Some basic for your ease:
 ## Diagram
 
-[View Excalidraw Diagram](https://github.com/byramnarayan/CompletePlacementResource/blob/main/src/dsaImg/Basic.png)
+![View Excalidraw Diagram](https://github.com/byramnarayan/CompletePlacementResource/blob/main/src/dsaImg/Basic.png)
 
