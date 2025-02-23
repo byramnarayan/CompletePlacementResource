@@ -113,6 +113,21 @@ def printArr(arr, capacity):
 
 ### Dynamic Array in Python
 
+
+## Concept
+   ![Concept](https://github.com/byramnarayan/CompletePlacementResource/blob/main/src/dsaImg/dynamicArray.png)
+
+
+## Why Double Size? 
+   ![Double](https://github.com/byramnarayan/CompletePlacementResource/blob/main/src/dsaImg/whyDoubleSize.png)
+
+## Power Series - Time and Space Analysis
+   ![Power](https://github.com/byramnarayan/CompletePlacementResource/blob/main/src/dsaImg/PowerSeriesDynamicArray.png)
+
+## Big-O Time:
+   ![Big](https://github.com/byramnarayan/CompletePlacementResource/blob/main/src/dsaImg/timeArray.png)
+
+
 ```python
 # Dynamic Array using list
 dynamic_arr = []
@@ -128,4 +143,83 @@ dynamic_arr.remove(2)  # Remove element 2
 # Traversal
 for element in dynamic_arr:
     print(element)
+```
+# Function Code: 
+
+```python
+
+# Function Code 
+
+# Python arrays are dynamic by default, but this is an example of resizing.
+class Array:
+    def __init__(self):
+        self.capacity = 2
+        self.length = 0
+        self.arr = [0] * 2 # Array of capacity = 2
+
+    # Insert n in the last position of the array
+    def pushback(self, n):
+        if self.length == self.capacity:
+            self.resize()
+            
+        # insert at next empty position
+        self.arr[self.length] = n
+        self.length += 1
+
+    def resize(self):
+        # Create new array of double capacity
+        self.capacity = 2 * self.capacity
+        newArr = [0] * self.capacity 
+        
+        # Copy elements to newArr
+        for i in range(self.length):
+            newArr[i] = self.arr[i]
+        self.arr = newArr
+        
+    # Remove the last element in the array
+    def popback(self):
+        if self.length > 0:
+            self.length -= 1
+    
+    # Get value at i-th index
+    def get(self, i):
+        if i < self.length:
+            return self.arr[i]
+        # Here we would throw an out of bounds exception
+
+    # Insert n at i-th index
+    def insert(self, i, n):
+        if i < self.length:
+            self.arr[i] = n
+            return
+        # Here we would throw an out of bounds exception       
+
+    def print(self):
+        for i in range(self.length):
+            print(self.arr[i])
+        print()
+
+```
+
+
+# Satcks
+
+## Diagram:
+   ![Big](https://github.com/byramnarayan/CompletePlacementResource/blob/main/src/dsaImg/Stack.png)
+
+
+```python
+
+# Implementing a stack is trivial using a dynamic array
+# (which we implemented earlier).
+class Stack:
+    def __init__(self):
+        self.stack = []
+
+    def push(self, n):
+        self.stack.append(n)
+
+    def pop(self):
+        return self.stack.pop()
+
 ```
